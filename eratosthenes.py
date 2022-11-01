@@ -1,4 +1,3 @@
-
 #   Sieve of Eratosthenes method for generating primes up to n     #
 
 
@@ -13,4 +12,5 @@ def eratosthenes(n):
     prime = [n for n in range(1, n) if prime[n]]
     return prime
 
-print(eratosthenes(1000))
+
+print(eratosthenes(10000))
