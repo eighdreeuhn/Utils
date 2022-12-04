@@ -13,4 +13,4 @@ def eratosthenes(n):
     return prime
 
 
-print(eratosthenes(10000))
+print(eratosthenes(1000000000))
