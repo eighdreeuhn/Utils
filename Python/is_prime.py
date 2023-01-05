@@ -1,12 +1,11 @@
-def is_prime(_p):
-    if _p < 2:
-        return False
-    if _p == 2:
-        return True
-    for i in range(2, int(_p**0.5) + 1):
-        if _p % i == 0:
+from math import ceil, sqrt
+
+
+def is_prime(n: int) -> bool:
+    """Improved Primality test"""
+    if n < 3 or not n % 2:
+        return n == 2
+    for i in range(3, ceil(sqrt(n)) + 1, 2):
+        if not n % i:
             return False
     return True
-
-
-print(is_prime(8))
