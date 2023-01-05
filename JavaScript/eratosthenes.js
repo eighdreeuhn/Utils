@@ -15,4 +15,4 @@ const eratosthenes = (n) => {
     },[])
  }
 
- console.log(eratosthenes(100000))
+ console.log(eratosthenes(2000000))
